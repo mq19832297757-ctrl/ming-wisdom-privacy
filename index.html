@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Privacy Policy for MING, an on-device Eastern wisdom and reflection app.">
+  <title>MING Privacy Policy</title>
+  <style>
+    :root {
+      --ink: #07100f;
+      --panel: rgba(17, 37, 33, .92);
+      --panel-soft: rgba(27, 54, 48, .72);
+      --paper: #f0e8d9;
+      --muted: #b8c7bd;
+      --jade: #6fa391;
+      --gold: #d5b878;
+      --line: rgba(194, 213, 200, .22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 18% -10%, rgba(70, 121, 104, .38), transparent 38%),
+        radial-gradient(circle at 90% 8%, rgba(165, 126, 68, .18), transparent 30%),
+        linear-gradient(155deg, #06100e 0%, #0b1c18 54%, #040a09 100%);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Arial, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .22;
+      background-image: radial-gradient(rgba(231, 210, 158, .6) .6px, transparent .6px);
+      background-size: 23px 23px;
+      mask-image: linear-gradient(to bottom, #000, transparent 70%);
+    }
+    main { position: relative; max-width: 900px; margin: 0 auto; padding: 34px 18px 64px; }
+    .language-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+    .language-bar button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--muted);
+      background: rgba(13, 35, 30, .72);
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .language-bar button[aria-pressed="true"] { color: var(--ink); border-color: var(--gold); background: var(--gold); }
+    article {
+      border: 1px solid rgba(203, 183, 126, .34);
+      border-radius: 26px;
+      padding: clamp(22px, 5vw, 48px);
+      background: linear-gradient(145deg, rgba(35, 61, 53, .94), rgba(5, 15, 13, .96));
+      box-shadow: 0 28px 80px rgba(0, 0, 0, .45), inset 0 1px rgba(255, 255, 255, .08);
+      backdrop-filter: blur(18px);
+    }
+    .eyebrow { color: var(--gold); font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { margin: 8px 0 4px; font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: clamp(38px, 8vw, 62px); line-height: 1.1; }
+    .meta { color: var(--muted); margin: 4px 0; }
+    .notice { margin: 24px 0 8px; padding: 16px 18px; border: 1px solid rgba(213, 184, 120, .35); border-left: 4px solid var(--gold); border-radius: 15px; background: rgba(72, 57, 31, .24); }
+    section { margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-weight: 500; color: #f1dfb1; font-size: 23px; }
+    p, li { color: var(--muted); font-size: 16px; }
+    ul { padding-left: 22px; }
+    a { color: var(--gold); font-weight: 700; overflow-wrap: anywhere; }
+    .footer { margin-top: 28px; color: #83988c; font-size: 13px; text-align: center; }
+    @media (max-width: 520px) { main { padding: 18px 10px 40px; } article { border-radius: 20px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="language-bar" aria-label="Language">
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="zh-Hans">简体中文</button>
+      <button type="button" data-lang="zh-Hant">繁體中文</button>
+      <button type="button" data-lang="fr">Français</button>
+      <button type="button" data-lang="ko">한국어</button>
+    </nav>
+    <article id="policy" aria-live="polite"></article>
+    <p class="footer">MING · See the pattern. Choose the path.</p>
+  </main>
+  <script>
+    const email = '<a href="mailto:mengquan83@163.com">mengquan83@163.com</a>';
+    const copy = {
+      en: {
+        title: 'Privacy Policy', app: 'App: MING – Eastern Wisdom', developer: 'Developer: MING Wisdom Studio', date: 'Effective date: July 21, 2026',
+        notice: 'MING processes your entries on your device. The current app does not transmit personal data to the developer and does not use advertising, analytics, tracking, or third-party crash reporting.',
+        sections: [
+          ['1. Scope', '<p>This policy explains how MING handles information when you use its BaZi, I Ching, daily rhythm, relationship, archive, and directional-compass features.</p>'],
+          ['2. Information stored on your device', '<p>MING stores information that you choose to enter or save in app-private storage on your device:</p><ul><li>Birth date, birth time, birthplace, time zone, and day-boundary preference.</li><li>Names and birth details in saved personal and relationship profiles.</li><li>I Ching casting archives, selected inquiry context, interpretations, and reflection status.</li><li>Marked days, language choice, background-music choice, haptic setting, and privacy-policy acceptance version.</li></ul><p>This information is used only to calculate and display features inside MING.</p>'],
+          ['3. No external collection or tracking', '<p>The current Android app has no Internet permission. MING does not upload the information above and does not use an account system, advertising SDK, analytics SDK, tracking technology, or third-party crash-reporting service. We do not sell or share app data.</p>'],
+          ['4. Sensors and permissions', '<p>The directional compass processes the phone’s orientation-sensor readings in memory while the compass screen is visible. These readings are not saved or transmitted. MING does not request GPS location, microphone, camera, contacts, calendar, phone, SMS, or storage permission.</p><p>Background music is played from a file bundled with the app and does not use the microphone.</p>'],
+          ['5. Paid download and third parties', '<p>If you purchase MING through an app store, the store processes the transaction under its own terms and privacy policy. MING Wisdom Studio does not receive your payment-card or store-account credentials. Opening this policy uses your web browser and GitHub Pages; contacting support uses your chosen email provider, each under its own privacy terms.</p>'],
+          ['6. Retention and deletion', '<p>Local data remains on your device until you delete it inside MING, clear the app’s storage in Android settings, or uninstall the app. The “Privacy & data” screen includes an option to delete all birth profiles, saved people, relationship profiles, casting archives, and marked days. Language, sound, and privacy choices remain unless you clear all app storage or uninstall MING.</p>'],
+          ['7. Your choices and rights', '<p>You choose whether to enter birth or relationship information. You can view, revise, or delete saved profiles from the app and can delete all local personal data from the “Privacy & data” screen. Because the current app does not transmit this information to us, we do not hold a server-side copy that can be accessed or deleted by the developer.</p>'],
+          ['8. Cultural and decision notice', '<p>MING provides cultural interpretation, entertainment, and reflective guidance. It does not provide or replace medical diagnosis or treatment, legal advice, financial advice, mental-health care, emergency services, or guaranteed predictions. Lost-item and lost-pet guidance is not a substitute for contacting appropriate local services when safety is at risk.</p>'],
+          ['9. Children’s privacy', '<p>MING is not specifically directed to children. The app does not knowingly transmit personal information from children or adults. Parents and guardians should decide whether the app’s reflective content is appropriate for a minor.</p>'],
+          ['10. Security and international use', '<p>Local information is protected by Android’s app sandbox. No storage method is completely risk-free, so protect access to your device. MING may be downloaded in multiple countries, but the current app does not operate a developer server or transfer app data across borders.</p>'],
+          ['11. Changes to this policy', '<p>When app behavior or legal requirements change, this page will be updated with a new effective date and policy version. If a change materially affects in-app data handling, MING will ask you to review the updated policy again.</p>'],
+          ['12. Contact', '<p>For privacy or support questions, contact MING Wisdom Studio at ' + email + '.</p>']
+        ]
+      },
+      'zh-Hans': {
+        title: '隐私政策', app: '应用：MING · 东方智慧', developer: '开发者：MING Wisdom Studio', date: '生效日期：2026年7月21日',
+        notice: 'MING 在你的设备上处理你输入的资料。当前应用不会向开发者传输个人资料，也不使用广告、统计分析、追踪或第三方崩溃上报服务。',
+        sections: [
+          ['1. 适用范围', '<p>本政策说明你使用 MING 的八字、周易、每日节律、关系、档案和方向罗盘功能时，应用如何处理相关资料。</p>'],
+          ['2. 保存在设备上的资料', '<p>MING 会把你主动填写或保存的以下资料存入设备上的应用专属空间：</p><ul><li>出生日期、出生时间、出生地点、时区和换日规则选择。</li><li>个人档案及关系档案中的称呼和出生资料。</li><li>易卦记录、所选问事情境、解读内容和回看状态。</li><li>标记日期、语言选择、背景音乐选择、触感设置和已同意的隐私政策版本。</li></ul><p>这些资料仅用于在 MING 内计算和展示相关功能。</p>'],
+          ['3. 不对外收集或追踪', '<p>当前 Android 应用没有网络权限。MING 不会上传上述资料，也不使用账号系统、广告 SDK、统计 SDK、追踪技术或第三方崩溃上报服务。我们不会出售或分享应用资料。</p>'],
+          ['4. 传感器与权限', '<p>方向罗盘只在罗盘页面显示时，在内存中处理手机方向传感器读数；这些读数不会被保存或传输。MING 不申请 GPS 定位、麦克风、相机、通讯录、日历、电话、短信或存储权限。</p><p>背景音乐来自应用内置音频文件，不会使用麦克风。</p>'],
+          ['5. 付费下载与第三方', '<p>如果你通过应用商店购买 MING，交易由应用商店按照其条款和隐私政策处理。MING Wisdom Studio 不会取得你的银行卡资料或商店账号凭据。打开本政策会使用你的浏览器和 GitHub Pages；联系支持会使用你选择的邮件服务，分别适用其自身隐私规则。</p>'],
+          ['6. 保存期限与删除', '<p>本地资料会一直保留到你在 MING 内删除、在 Android 设置中清除应用存储或卸载应用。“隐私与数据”页面提供删除全部出生档案、人物、关系档案、卦象记录和标记日期的功能。语言、声音和隐私选择会保留，除非你清除全部应用存储或卸载 MING。</p>'],
+          ['7. 你的选择和权利', '<p>是否填写出生或关系资料由你决定。你可以在应用内查看、修改或删除档案，也可以从“隐私与数据”页面删除全部本地个人资料。由于当前应用不会把这些资料传输给我们，开发者没有可供访问或删除的服务器副本。</p>'],
+          ['8. 文化与决策说明', '<p>MING 提供东方文化解读、娱乐和自我反思参考，不提供或替代医疗诊断与治疗、法律意见、财务意见、心理健康服务、紧急服务或保证准确的预测。寻物和寻找宠物建议在存在安全风险时不能替代联系当地有关机构。</p>'],
+          ['9. 儿童隐私', '<p>MING 并非专门面向儿童。应用不会有意传输儿童或成年人的个人资料。家长或监护人应自行判断其中的反思内容是否适合未成年人。</p>'],
+          ['10. 安全与跨地区使用', '<p>本地资料受到 Android 应用沙箱保护。任何存储方式都并非绝对无风险，请妥善保护设备访问权限。MING 可以在多个国家下载，但当前应用不运行开发者服务器，也不会跨境传输应用资料。</p>'],
+          ['11. 政策变更', '<p>应用行为或法律要求变化时，我们会更新本页面的生效日期和政策版本。如果变更实质影响应用内资料处理方式，MING 会再次请你查看更新后的政策。</p>'],
+          ['12. 联系方式', '<p>如有隐私或支持问题，请通过 ' + email + ' 联系 MING Wisdom Studio。</p>']
+        ]
+      },
+      'zh-Hant': {
+        title: '隱私權政策', app: '應用程式：MING · 東方智慧', developer: '開發者：MING Wisdom Studio', date: '生效日期：2026年7月21日',
+        notice: 'MING 在你的裝置上處理你輸入的資料。目前的應用程式不會向開發者傳輸個人資料，也不使用廣告、統計分析、追蹤或第三方當機回報服務。',
+        sections: [
+          ['1. 適用範圍', '<p>本政策說明你使用 MING 的八字、周易、每日節律、關係、檔案和方向羅盤功能時，應用程式如何處理相關資料。</p>'],
+          ['2. 儲存在裝置上的資料', '<p>MING 會把你主動填寫或儲存的以下資料存入裝置上的應用程式專屬空間：</p><ul><li>出生日期、出生時間、出生地點、時區和換日規則選擇。</li><li>個人檔案及關係檔案中的稱呼和出生資料。</li><li>易卦記錄、所選問事情境、解讀內容和回看狀態。</li><li>標記日期、語言選擇、背景音樂選擇、觸覺設定和已同意的隱私政策版本。</li></ul><p>這些資料僅用於在 MING 內計算和顯示相關功能。</p>'],
+          ['3. 不對外蒐集或追蹤', '<p>目前的 Android 應用程式沒有網路權限。MING 不會上傳上述資料，也不使用帳號系統、廣告 SDK、統計 SDK、追蹤技術或第三方當機回報服務。我們不會出售或分享應用程式資料。</p>'],
+          ['4. 感測器與權限', '<p>方向羅盤只在羅盤頁面顯示時，於記憶體中處理手機方向感測器讀數；這些讀數不會被儲存或傳輸。MING 不申請 GPS 定位、麥克風、相機、通訊錄、行事曆、電話、簡訊或儲存空間權限。</p><p>背景音樂來自應用程式內建音訊檔案，不會使用麥克風。</p>'],
+          ['5. 付費下載與第三方', '<p>如果你透過應用程式商店購買 MING，交易由應用程式商店依其條款和隱私政策處理。MING Wisdom Studio 不會取得你的信用卡資料或商店帳號憑證。開啟本政策會使用你的瀏覽器和 GitHub Pages；聯絡支援會使用你選擇的電子郵件服務，分別適用其自身隱私規則。</p>'],
+          ['6. 保存期限與刪除', '<p>本機資料會一直保留到你在 MING 內刪除、在 Android 設定中清除應用程式儲存空間或解除安裝。“隱私與資料”頁面提供刪除全部出生檔案、人物、關係檔案、卦象記錄和標記日期的功能。語言、聲音和隱私選擇會保留，除非你清除全部應用程式儲存空間或解除安裝 MING。</p>'],
+          ['7. 你的選擇與權利', '<p>是否填寫出生或關係資料由你決定。你可以在應用程式內查看、修改或刪除檔案，也可以從“隱私與資料”頁面刪除全部本機個人資料。由於目前的應用程式不會把這些資料傳輸給我們，開發者沒有可供存取或刪除的伺服器副本。</p>'],
+          ['8. 文化與決策說明', '<p>MING 提供東方文化解讀、娛樂和自我反思參考，不提供或取代醫療診斷與治療、法律意見、財務意見、心理健康服務、緊急服務或保證準確的預測。尋物和尋找寵物建議在存在安全風險時不能取代聯絡當地相關機構。</p>'],
+          ['9. 兒童隱私', '<p>MING 並非專門面向兒童。應用程式不會有意傳輸兒童或成年人的個人資料。家長或監護人應自行判斷其中的反思內容是否適合未成年人。</p>'],
+          ['10. 安全與跨地區使用', '<p>本機資料受到 Android 應用程式沙箱保護。任何儲存方式都並非絕對無風險，請妥善保護裝置存取權限。MING 可以在多個國家下載，但目前的應用程式不執行開發者伺服器，也不會跨境傳輸應用程式資料。</p>'],
+          ['11. 政策變更', '<p>應用程式行為或法律要求變更時，我們會更新本頁面的生效日期和政策版本。如果變更實質影響應用程式內資料處理方式，MING 會再次請你查看更新後的政策。</p>'],
+          ['12. 聯絡方式', '<p>如有隱私或支援問題，請透過 ' + email + ' 聯絡 MING Wisdom Studio。</p>']
+        ]
+      },
+      fr: {
+        title: 'Politique de confidentialité', app: 'Application : MING – Sagesse orientale', developer: 'Développeur : MING Wisdom Studio', date: 'Date d’entrée en vigueur : 21 juillet 2026',
+        notice: 'MING traite vos saisies sur votre appareil. L’application actuelle ne transmet aucune donnée personnelle au développeur et n’utilise ni publicité, ni analyse d’usage, ni suivi, ni service tiers de rapport d’incident.',
+        sections: [
+          ['1. Champ d’application', '<p>Cette politique décrit la manière dont MING traite les informations lorsque vous utilisez les fonctions de BaZi, Yi Jing, rythme quotidien, relations, archives et boussole directionnelle.</p>'],
+          ['2. Informations conservées sur votre appareil', '<p>MING enregistre dans l’espace privé de l’application les informations que vous choisissez de saisir ou de conserver :</p><ul><li>Date, heure et lieu de naissance, fuseau horaire et choix de la règle de changement de jour.</li><li>Noms et données de naissance des profils personnels et relationnels.</li><li>Archives de tirages du Yi Jing, contexte choisi, interprétations et état de réflexion.</li><li>Jours marqués, langue, musique de fond, retour haptique et version de la politique acceptée.</li></ul><p>Ces informations servent uniquement à calculer et afficher les fonctions de MING.</p>'],
+          ['3. Aucune collecte externe ni aucun suivi', '<p>L’application Android actuelle ne dispose pas de l’autorisation Internet. MING ne téléverse pas les informations ci-dessus et n’utilise ni compte, ni SDK publicitaire, ni SDK d’analyse, ni technologie de suivi, ni rapport d’incident tiers. Nous ne vendons ni ne partageons les données de l’application.</p>'],
+          ['4. Capteurs et autorisations', '<p>La boussole traite en mémoire les mesures du capteur d’orientation uniquement lorsque son écran est visible. Ces mesures ne sont ni conservées ni transmises. MING ne demande aucun accès au GPS, au microphone, à la caméra, aux contacts, au calendrier, au téléphone, aux SMS ou au stockage.</p><p>La musique de fond provient d’un fichier inclus dans l’application et n’utilise pas le microphone.</p>'],
+          ['5. Téléchargement payant et tiers', '<p>Si vous achetez MING dans une boutique d’applications, celle-ci traite la transaction selon ses propres conditions et règles de confidentialité. MING Wisdom Studio ne reçoit ni vos données de carte ni vos identifiants de paiement. L’ouverture de cette politique utilise votre navigateur et GitHub Pages ; le contact avec l’assistance utilise votre fournisseur de messagerie, chacun selon ses propres règles.</p>'],
+          ['6. Conservation et suppression', '<p>Les données locales restent sur votre appareil jusqu’à leur suppression dans MING, l’effacement du stockage de l’application dans Android ou sa désinstallation. L’écran « Confidentialité et données » permet de supprimer tous les profils de naissance, personnes, profils relationnels, archives de tirages et jours marqués. Les choix de langue, de son et de confidentialité restent enregistrés, sauf si vous effacez tout le stockage ou désinstallez MING.</p>'],
+          ['7. Vos choix et vos droits', '<p>Vous décidez de saisir ou non des informations de naissance ou de relation. Vous pouvez consulter, modifier ou supprimer les profils enregistrés et effacer toutes les données personnelles locales depuis l’écran « Confidentialité et données ». L’application actuelle ne nous transmettant pas ces informations, le développeur ne détient aucune copie sur serveur à consulter ou supprimer.</p>'],
+          ['8. Avis culturel et décisionnel', '<p>MING propose une interprétation culturelle, un divertissement et des pistes de réflexion. L’application ne fournit ni ne remplace un diagnostic ou traitement médical, un conseil juridique ou financier, un soin psychologique, un service d’urgence ou une prédiction garantie. En cas de risque, les conseils concernant un objet ou un animal perdu ne remplacent pas les services locaux compétents.</p>'],
+          ['9. Vie privée des enfants', '<p>MING ne s’adresse pas spécifiquement aux enfants. L’application ne transmet sciemment les informations personnelles ni des enfants ni des adultes. Il appartient aux parents ou responsables légaux d’évaluer si le contenu réflexif convient à un mineur.</p>'],
+          ['10. Sécurité et utilisation internationale', '<p>Les informations locales sont protégées par le bac à sable d’Android. Aucune méthode de stockage n’est totalement sans risque : protégez l’accès à votre appareil. MING peut être téléchargée dans plusieurs pays, mais l’application actuelle n’exploite aucun serveur du développeur et ne transfère pas de données d’application entre pays.</p>'],
+          ['11. Modifications de cette politique', '<p>Lorsque le fonctionnement de l’application ou les exigences légales changent, cette page est mise à jour avec une nouvelle date d’entrée en vigueur et une nouvelle version. Si une modification affecte sensiblement le traitement des données dans l’application, MING vous demandera de consulter à nouveau la politique.</p>'],
+          ['12. Contact', '<p>Pour toute question de confidentialité ou d’assistance, contactez MING Wisdom Studio à l’adresse ' + email + '.</p>']
+        ]
+      },
+      ko: {
+        title: '개인정보처리방침', app: '앱: MING · 동양의 지혜', developer: '개발자: MING Wisdom Studio', date: '시행일: 2026년 7월 21일',
+        notice: 'MING은 사용자가 입력한 정보를 기기 안에서 처리합니다. 현재 앱은 개발자에게 개인정보를 전송하지 않으며 광고, 이용 분석, 추적, 제3자 오류 보고 서비스를 사용하지 않습니다.',
+        sections: [
+          ['1. 적용 범위', '<p>이 정책은 MING의 사주, 주역, 오늘의 흐름, 관계, 기록, 방향 나침반 기능을 사용할 때 관련 정보를 어떻게 처리하는지 설명합니다.</p>'],
+          ['2. 기기에 저장되는 정보', '<p>MING은 사용자가 입력하거나 저장하기로 선택한 다음 정보를 기기의 앱 전용 저장 공간에 보관합니다.</p><ul><li>생년월일, 출생 시각, 출생지, 시간대, 날짜 변경 기준 선택.</li><li>개인 및 관계 프로필의 이름과 출생 정보.</li><li>주역 점괘 기록, 선택한 질문 맥락, 해석, 되돌아보기 상태.</li><li>표시한 날짜, 언어, 배경 음악, 진동 설정, 동의한 개인정보처리방침 버전.</li></ul><p>이 정보는 MING 안에서 기능을 계산하고 표시하는 데에만 사용됩니다.</p>'],
+          ['3. 외부 수집 및 추적 없음', '<p>현재 Android 앱에는 인터넷 권한이 없습니다. MING은 위 정보를 업로드하지 않으며 계정 시스템, 광고 SDK, 분석 SDK, 추적 기술, 제3자 오류 보고 서비스를 사용하지 않습니다. 앱 데이터를 판매하거나 공유하지 않습니다.</p>'],
+          ['4. 센서와 권한', '<p>방향 나침반은 해당 화면이 보이는 동안에만 방향 센서 값을 메모리에서 처리합니다. 센서 값은 저장되거나 전송되지 않습니다. MING은 GPS 위치, 마이크, 카메라, 연락처, 캘린더, 전화, 문자, 저장 공간 권한을 요청하지 않습니다.</p><p>배경 음악은 앱에 포함된 음원 파일을 재생하며 마이크를 사용하지 않습니다.</p>'],
+          ['5. 유료 다운로드와 제3자', '<p>앱 스토어에서 MING을 구매하면 스토어가 자체 약관과 개인정보 보호정책에 따라 결제를 처리합니다. MING Wisdom Studio는 카드 정보나 스토어 결제 계정 정보를 받지 않습니다. 이 정책을 열 때는 브라우저와 GitHub Pages를, 지원 문의에는 사용자가 선택한 이메일 서비스를 이용하며 각각 자체 개인정보 보호정책이 적용됩니다.</p>'],
+          ['6. 보관과 삭제', '<p>로컬 데이터는 MING 안에서 삭제하거나 Android 설정에서 앱 저장 공간을 지우거나 앱을 제거할 때까지 기기에 남습니다. “개인정보와 데이터” 화면에서 출생 프로필, 저장한 인물, 관계 프로필, 점괘 기록, 표시한 날짜를 모두 삭제할 수 있습니다. 언어, 소리, 개인정보 선택은 전체 앱 저장 공간을 지우거나 MING을 제거하기 전까지 유지됩니다.</p>'],
+          ['7. 사용자의 선택과 권리', '<p>출생 정보나 관계 정보를 입력할지는 사용자가 결정합니다. 앱에서 저장된 프로필을 확인·수정·삭제할 수 있고 “개인정보와 데이터” 화면에서 모든 로컬 개인정보를 삭제할 수 있습니다. 현재 앱은 이 정보를 개발자에게 전송하지 않으므로 개발자가 열람하거나 삭제할 서버 사본도 없습니다.</p>'],
+          ['8. 문화 및 의사결정 안내', '<p>MING은 문화적 해석, 오락, 성찰을 위한 안내를 제공합니다. 의료 진단·치료, 법률·재정 조언, 정신건강 관리, 응급 서비스 또는 결과가 보장된 예측을 제공하거나 대신하지 않습니다. 안전 위험이 있는 경우 분실물이나 반려동물 찾기 안내는 현지 관계 기관에 연락하는 일을 대신할 수 없습니다.</p>'],
+          ['9. 아동의 개인정보', '<p>MING은 아동을 특별히 대상으로 하지 않습니다. 앱은 아동이나 성인의 개인정보를 의도적으로 전송하지 않습니다. 보호자는 성찰 콘텐츠가 미성년자에게 적합한지 판단해야 합니다.</p>'],
+          ['10. 보안 및 국제적 이용', '<p>로컬 정보는 Android 앱 샌드박스로 보호됩니다. 완전히 위험이 없는 저장 방식은 없으므로 기기 접근을 안전하게 관리하세요. MING은 여러 국가에서 다운로드할 수 있지만 현재 앱은 개발자 서버를 운영하지 않으며 앱 데이터를 국가 간에 전송하지 않습니다.</p>'],
+          ['11. 정책 변경', '<p>앱의 동작이나 법적 요구사항이 변경되면 이 페이지의 시행일과 정책 버전을 갱신합니다. 앱 안의 데이터 처리 방식에 중대한 변경이 생기면 MING이 갱신된 정책을 다시 확인하도록 요청합니다.</p>'],
+          ['12. 문의', '<p>개인정보 또는 지원 관련 문의는 ' + email + '으로 MING Wisdom Studio에 연락해 주세요.</p>']
+        ]
+      }
+    };
+
+    function render(lang) {
+      const selected = copy[lang] || copy.en;
+      document.documentElement.lang = lang;
+      document.title = selected.title + ' · MING';
+      document.getElementById('policy').innerHTML =
+        '<div class="eyebrow">MING · PRIVACY</div>' +
+        '<h1>' + selected.title + '</h1>' +
+        '<p class="meta">' + selected.app + '</p>' +
+        '<p class="meta">' + selected.developer + '</p>' +
+        '<p class="meta">' + selected.date + '</p>' +
+        '<div class="notice">' + selected.notice + '</div>' +
+        selected.sections.map(([title, body]) => '<section><h2>' + title + '</h2>' + body + '</section>').join('');
+      document.querySelectorAll('[data-lang]').forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.lang === lang));
+      });
+      localStorage.setItem('ming-privacy-language', lang);
+    }
+
+    document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => render(button.dataset.lang)));
+    const browserLanguage = navigator.language || 'en';
+    const automatic = browserLanguage.startsWith('zh') ? (browserLanguage.includes('TW') || browserLanguage.includes('HK') || browserLanguage.includes('Hant') ? 'zh-Hant' : 'zh-Hans') : browserLanguage.startsWith('fr') ? 'fr' : browserLanguage.startsWith('ko') ? 'ko' : 'en';
+    render(localStorage.getItem('ming-privacy-language') || automatic);
+  </script>
+</body>
+</html>
