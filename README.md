@@ -1,6 +1,6 @@
 # MING Privacy Policy
 
-Three independently identified, five-language privacy policies for the MING Android application.
+Three independently identified privacy policies for the MING Android application. The Samsung page is available in seven languages; the Huawei and ONE store pages currently retain the original five-language set.
 
 - Samsung / Galaxy Store: <https://mq19832297757-ctrl.github.io/ming-wisdom-privacy/>
 - Huawei / AppGallery: <https://mq19832297757-ctrl.github.io/ming-wisdom-privacy/huawei/>
