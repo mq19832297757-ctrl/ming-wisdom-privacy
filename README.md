@@ -10,5 +10,3 @@ The Huawei page uses the Chinese legal company name only in Simplified Chinese. 
 The ONE store page uses the same personal developer identity and data-handling terms as the Samsung edition, while identifying ONE store as the transaction provider.
 
 The October 13, 2026 Samsung and ONE store updates describe saved home assessments and confirmed bearings, local calculation caches, deletion and manual backups.
-
-The October 13, 2026 Samsung and ONE store updates describe saved home assessments and confirmed bearings, local calculation caches, deletion and manual backups.
